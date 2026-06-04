@@ -1,0 +1,20 @@
+class polygon:
+    def area(self):
+        pass
+class rectangle(polygon):
+    def __init__(self,length,breadth):
+        self.length=length
+        self.breadth=breadth
+    def area(self):
+        return self.length*self.breadth
+class square(polygon):
+    def __init__(self,side):
+        self.side=side
+    def area(self):
+        return self.side*self.side
+
+rect=rectangle(10,5)
+sq=square(5)
+
+print("rectangle area:",rect.area())
+print("square area:",sq.area())
